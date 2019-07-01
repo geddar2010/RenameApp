@@ -1,0 +1,15 @@
+C:\Users\kazancev\source\repos\RenameApp\bin\Debug\RenameApp.exe
+C:\Users\kazancev\source\repos\RenameApp\bin\Debug\RenameApp.pdb
+C:\Users\kazancev\source\repos\RenameApp\bin\Debug\MetadataExtractor.dll
+C:\Users\kazancev\source\repos\RenameApp\bin\Debug\XmpCore.dll
+C:\Users\kazancev\source\repos\RenameApp\bin\Debug\MetadataExtractor.xml
+C:\Users\kazancev\source\repos\RenameApp\bin\Debug\XmpCore.xml
+C:\Users\kazancev\source\repos\RenameApp\obj\Debug\RenameApp.csprojAssemblyReference.cache
+C:\Users\kazancev\source\repos\RenameApp\obj\Debug\RenameApp.Properties.Resources.resources
+C:\Users\kazancev\source\repos\RenameApp\obj\Debug\RenameApp.csproj.GenerateResource.cache
+C:\Users\kazancev\source\repos\RenameApp\obj\Debug\RenameApp.csproj.CoreCompileInputs.cache
+C:\Users\kazancev\source\repos\RenameApp\obj\Debug\RenameApp.csproj.CopyComplete
+C:\Users\kazancev\source\repos\RenameApp\obj\Debug\RenameApp.exe
+C:\Users\kazancev\source\repos\RenameApp\obj\Debug\RenameApp.pdb
+C:\Users\kazancev\source\repos\RenameApp\obj\Debug\RenameApp.Form1.resources
+C:\Users\kazancev\source\repos\RenameApp\bin\Debug\RenameApp.exe.config
