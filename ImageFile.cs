@@ -15,18 +15,16 @@ namespace RenameApp
         public ImageFile(string path)
         {
             this.FilePath = path;
-            this.FileName = Path.GetFileName(FilePath);
+            this.FileName = Path.GetFileNameWithoutExtension(FilePath);
             this.Extension = Path.GetExtension(FilePath);
-            this.CreationDate = GetTakenDateTime(path) ?? File.GetCreationTime(path);
-            //using (Image img = Image.FromFile(path))
-            //{
-            //    this.Width = img.Width;
-            //    this.Height = img.Height;
-            //    this.Resolution = Width* Height;
-            //    ImageFormat format = img.RawFormat;                
-            //    this.ImageType = format.ToString();                
-            //    this.PixelDepth = Image.GetPixelFormatSize(img.PixelFormat) + "bpp";                
-            //}                
+            this.CreationDate = GetTakenDateTime(path);
+        }
+
+        public void SetFileNameAndCreationDate(string newFileName, DateTime newCreationDate)
+        {
+            this.CreationDate = newCreationDate;
+            this.FilePath = this.FilePath.Replace(this.FileName, newFileName);
+            this.FileName = newFileName;
         }
 
         public string ImageType { get; private set; }
@@ -38,19 +36,21 @@ namespace RenameApp
         public int Resolution { get; private set; }
         public string FileName { get; private set; }
         public string Extension { get; private set; }
+        public bool HasExtendedProperties { get; private set; }
 
-        DateTime? GetTakenDateTime(string filePath)
+        DateTime GetTakenDateTime(string filePath)
         {
             var directories = ImageMetadataReader.ReadMetadata(filePath);
             var directory = directories.OfType<ExifSubIfdDirectory>().FirstOrDefault();
 
-            if (directory == null)
-                return null;
+            DateTime dateTime = File.GetCreationTime(filePath);
 
-            if (directory.TryGetDateTime(ExifDirectoryBase.TagDateTimeOriginal, out var dateTime))
-                return dateTime;
+            if (directory != null && directory.TryGetDateTime(ExifDirectoryBase.TagDateTimeOriginal, out dateTime))
+            {
+                this.HasExtendedProperties = true;
+            }
 
-            return null;
+            return dateTime;
         }
 
     }

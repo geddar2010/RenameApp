@@ -107,6 +107,28 @@ namespace RenameApp
             {
                 try
                 {
+                    if (!image.HasExtendedProperties)
+                    {
+                        RenameFileDialog dlg = new RenameFileDialog(image.FileName, image.CreationDate);
+
+                        if (dlg.ShowDialog(this) == DialogResult.OK)
+                        {
+                            var fileName = dlg.tbFileName.Text.Trim();
+
+                            if (fileName == "")
+                                fileName = image.FileName;
+
+                            var creationDate = dlg.dtpCreationDate.Value;
+                            var filePath = image.FilePath.Replace(image.FileName, fileName);
+
+                            File.Move(image.FilePath, filePath);
+
+                            image.SetFileNameAndCreationDate(fileName, creationDate);
+                        }
+
+                        dlg.Dispose();
+                    }
+
                     File.SetCreationTime(image.FilePath, image.CreationDate);
                     File.SetLastWriteTime(image.FilePath, image.CreationDate);
 
