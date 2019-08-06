@@ -5,12 +5,11 @@ C:\Users\kazancev\source\repos\RenameApp\bin\Release\MetadataExtractor.dll
 C:\Users\kazancev\source\repos\RenameApp\bin\Release\XmpCore.dll
 C:\Users\kazancev\source\repos\RenameApp\bin\Release\MetadataExtractor.xml
 C:\Users\kazancev\source\repos\RenameApp\bin\Release\XmpCore.xml
-C:\Users\kazancev\source\repos\RenameApp\obj\Release\RenameApp.csprojAssemblyReference.cache
 C:\Users\kazancev\source\repos\RenameApp\obj\Release\RenameApp.Form1.resources
 C:\Users\kazancev\source\repos\RenameApp\obj\Release\RenameApp.Properties.Resources.resources
+C:\Users\kazancev\source\repos\RenameApp\obj\Release\RenameApp.RenameFileDialog.resources
 C:\Users\kazancev\source\repos\RenameApp\obj\Release\RenameApp.csproj.GenerateResource.cache
 C:\Users\kazancev\source\repos\RenameApp\obj\Release\RenameApp.csproj.CoreCompileInputs.cache
 C:\Users\kazancev\source\repos\RenameApp\obj\Release\RenameApp.csproj.CopyComplete
 C:\Users\kazancev\source\repos\RenameApp\obj\Release\RenameApp.exe
 C:\Users\kazancev\source\repos\RenameApp\obj\Release\RenameApp.pdb
-C:\Users\kazancev\source\repos\RenameApp\obj\Release\RenameApp.RenameFileDialog.resources
